@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b -v"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bitgo": "^14.2.1"
+    "@bitgo-beta/bitgo": "^14.2.1-beta.23",
+    "@bitgo-beta/statics": "7.0.1-beta.20",
+    "bitgo": "14.3.0",
+    "ethers": "^5.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.2.4",
+    "web3": "^1.8.0"
   }
 }
