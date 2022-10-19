@@ -1,4 +1,4 @@
-// run with 'ts-node-esm index.ts'
+// run with 'npx ts-node <filename>.ts'
 
 const { BitGo } = require('@bitgo-beta/bitgo');
 import {accessToken} from './secrets';
@@ -19,23 +19,20 @@ export enum WalletVersion {
 export const environment =  Environment.TEST;
 
 export const bitgo = new BitGo({
-  accessToken: accessToken[Environment.TEST],
-  env: Environment.TEST,
+  accessToken: accessToken[environment],
+  env: environment,
   customRootURI: rootURI.test,
 });
 
 // TODO set enterprise ID here
 export const enterprise = {
-  [Environment.TEST]: ''
+  [Environment.TEST]: '6351ac65400e890007ad91703096a880'
 }
+export const walletId = '';
+
 
 export const walletVersion = WalletVersion.TSS;
 export const multisigType = 'tss';
-export const enterpriseId = enterprise[Environment.TEST];
-
-// TODO set walletId and baseAddress here after wallet generation
-export const walletId = '';
-export const addressFromWallet = '';
-// fee address:
+export const enterpriseId = enterprise[environment];
 
 export const COIN = 'tpolygon';
