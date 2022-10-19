@@ -11,5 +11,5 @@ const encodedData = iface.encodeFunctionData("methodName", ['0x50D4C450F091e549A
 console.log('encode with signature: ', encodedData);
 
 let provider = ethers.getDefaultProvider('goerli');
-const data = provider.getStorageAt('0x50D4C450F091e549A3059d2e47043CC184f09886', 1);
-data.then(d => console.log(d));
+const data = provider.getStorageAt('0x8F325A8777bE8b99d19430371bfe7848c196969B', 5);
+data.then(d => console.log('storage at: ', d));

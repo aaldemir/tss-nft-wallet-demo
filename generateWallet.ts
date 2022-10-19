@@ -10,15 +10,11 @@ async function createHotWallet() {
         passphrase: walletPassphrase,
     };
     const newWallet = await bitgo.coin(COIN).wallets().generateWallet(walletCreationParams);
-
-    console.log(JSON.stringify(newWallet, undefined, 2));
-
     return newWallet.wallet;
 }
 
-let newWallet;
-createHotWallet().then(wallet => {
-    newWallet = wallet
+createHotWallet().then(newWallet => {
     console.log('wallet base address: ', newWallet.coinSpecific().baseAddress);
+    console.log('walletId: ', newWallet.id());
     console.log('wallet fee address: ', newWallet.coinSpecific().feeAddress);
 });

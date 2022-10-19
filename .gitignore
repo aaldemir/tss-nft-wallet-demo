@@ -2,6 +2,6 @@ dist
 node_modules
 .idea
 package-lock.json
-secrets.ts
+#secrets.ts
 polygonNotesTSS.txt
 
