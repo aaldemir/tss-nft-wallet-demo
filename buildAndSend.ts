@@ -48,6 +48,7 @@ async function main() {
             recipient: '0xE514EE5028934565C3f839429Ea3c091EFE4C701',
             baseUnitQuantity: '0',
             tokenContractAddress: '0x252b4f5b517057db563e14cf7274b4467289fea8',
+            tokenId: '12',
             // ERC721, ERC1155, ERC20
             tokenType: 'ERC721',
             tokenQuantity: '1'

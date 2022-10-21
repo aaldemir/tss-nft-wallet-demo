@@ -10,23 +10,25 @@ export enum Environment {
 
 const rootURI = {
   test: 'https://app.bitgo-test.com',
+  custom: 'https://testnet-10-app.bitgo-dev.com',
 }
 
 export enum WalletVersion {
   TSS = 3,
 }
 
-export const environment =  Environment.TEST;
+export const environment =  Environment.CUSTOM;
 
 export const bitgo = new BitGo({
   accessToken: accessToken[environment],
   env: environment,
-  customRootURI: rootURI.test,
+  customRootURI: rootURI.custom,
 });
 
 // TODO set enterprise ID here
 export const enterprise = {
-  [Environment.TEST]: '6351ac65400e890007ad91703096a880'
+  [Environment.TEST]: '6351ac65400e890007ad91703096a880',
+  [Environment.CUSTOM]: '6351ee128a0de50007687d7e98ad7a8c',
 }
 export const walletId = '';
 
