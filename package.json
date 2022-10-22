@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bitgo-beta/bitgo": "^14.2.1-beta.23",
+    "@bitgo-beta/bitgo": "^14.2.1-beta.39",
     "@bitgo-beta/statics": "7.0.1-beta.20",
     "bitgo": "14.3.0",
     "ethers": "^5.7.1",
