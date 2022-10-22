@@ -28,7 +28,7 @@ export const bitgo = new BitGo({
 // TODO set enterprise ID here
 export const enterprise = {
   [Environment.TEST]: '6351ac65400e890007ad91703096a880',
-  [Environment.CUSTOM]: '635333083d230a00077882d8d6697517',
+  [Environment.CUSTOM]: '6358027f54ad210007cb6003cd80439b',
 }
 export const walletId = '';
 
